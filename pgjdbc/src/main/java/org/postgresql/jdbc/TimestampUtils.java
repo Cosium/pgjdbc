@@ -49,7 +49,7 @@ public class TimestampUtils {
     // The expected maximum value is 60 (seconds), so 64 is used "just in case"
     NUMBERS = new char[64][];
     for (int i = 0; i < NUMBERS.length; i++) {
-      NUMBERS[i] = Integer.toString(i).toCharArray();
+      NUMBERS[i] =  ((i < 10 ? "0" : "") + Integer.toString(i)).toCharArray();
     }
   }
 
